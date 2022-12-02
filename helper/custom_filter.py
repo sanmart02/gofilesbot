@@ -5,7 +5,7 @@ from pyrogram.types import Message
 
 
 async def allowed_chat_filter_fn(_, __, m: Message):
-    return bool(m.media_group_id)
+    return bool(m.chat and m.chat.type in {"group"})
 
 
 allowed_chat_filter = filters.create(allowed_chat_filter_fn)
