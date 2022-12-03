@@ -22,13 +22,13 @@ logging.getLogger("pyrogram").setLevel(logging.WARNING)
 class Config(object):
 
     # Get a bot token from botfather
-    TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
+    TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "5830668557:AAGKCYcd5RAmPEJqXNQ9D0KoRUU4OlJ4TqA")
 
     # Get from my.telegram.org
-    APP_ID = int(os.environ.get("APP_ID", ""))
+    APP_ID = int(os.environ.get("APP_ID", "9100170"))
 
     # Get from my.telegram.org
-    API_HASH = os.environ.get("API_HASH", "")
+    API_HASH = os.environ.get("API_HASH", "8bd74422e5a71ca6a5b00bcbdb1bfa48")
 
     # Generate a user session string
     TG_USER_SESSION = os.environ.get("TG_USER_SESSION", "")
@@ -37,11 +37,11 @@ class Config(object):
     CHANNELS = set(int(x) for x in os.environ.get("CHANNELS", "").split())
 
     # Authorized users to perform delete messages in group
-    AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "").split())
+    AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "1170822786").split())
 
 # ------------------------------------------ Optional Variables ------------------------------------------------------ #
     # Username of the group to tag in sending medias
-    GROUP_U_NAME = os.environ.get("GROUP_U_NAME", "@MovieKeralam")
+    GROUP = os.environ.get("GROUP", "-1001405795406")
 
 
 def LOGGER(name: str) -> logging.Logger:
